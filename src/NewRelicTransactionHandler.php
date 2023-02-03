@@ -39,7 +39,7 @@ class NewRelicTransactionHandler
             $this->cliRequests();
             $this->queueHandling();
             $this->artisanCommands();
-            $this->scheduledTasks();
+//            $this->scheduledTasks();
         } catch (\Throwable $throwable) {
             if (app()->environment(config('new-relic.loggable'))) {
                 throw $throwable;
