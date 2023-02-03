@@ -155,8 +155,8 @@ class NewRelicTransaction
     public function isActive(?string $withName = null): bool
     {
         return $this->isActive
-            && (! $this->isIgnored)
-            && ($withName === null || $this->name === $withName);
+            && (! $this->isIgnored);
+            // && ($withName === null || $this->name === $withName);
     }
 
     /**
